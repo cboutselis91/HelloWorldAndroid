@@ -6,13 +6,50 @@
     android:layout_height="match_parent"
     tools:context="com.example.kentec.myapplication.MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/buttonBuddy1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginBottom="23dp"
+        android:onClick="Buddy1"
+        android:text="Enter Buddy 1"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBuddy2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
+    <Button
+        android:id="@+id/buttonBuddy2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:onClick="Buddy2"
+        android:text="Enter Buddy 2"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMatch"
+        app:layout_constraintStart_toStartOf="@+id/buttonBuddy1"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBuddy1" />
+
+    <Button
+        android:id="@+id/buttonMatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="97dp"
+        android:layout_marginStart="15dp"
+        android:onClick="Match"
+        android:text="Match Me"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/buttonBuddy2"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBuddy2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="165dp"
+        android:layout_marginTop="40dp"
+        android:text="Welcome to Movie Buddy!"
+        app:layout_constraintBottom_toTopOf="@+id/buttonBuddy1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

@@ -35,7 +35,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void Match(View view){
         Intent Match = new Intent(this,com.example.kentec.myapplication.Match.class);
-        Match.putExtra("Buddy1", BuddyList);
+        int count = 1;
+        for (Buddy a:BuddyList) {
+            Match.putExtra("Buddy"+ count++, a);
+        }
         startActivity(Match);
     }
 

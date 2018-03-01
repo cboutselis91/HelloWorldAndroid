@@ -134,7 +134,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:max="10" />
+                android:backgroundTint="@color/colorPrimary"
+                android:max="10"
+                android:progressBackgroundTint="@color/colorPrimary" />
 
             <TextView
                 android:id="@+id/textView9"
@@ -161,8 +163,7 @@
                 android:id="@+id/seekBarIndyMainstream"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:max="10" />
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/textView11"
